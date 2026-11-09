@@ -64,7 +64,7 @@ Keep instructions updated with major architecture/design/dependency changes.
 2. Confirm, commit and push
 
 Bonus: Check that GitHub Pages is updating.
-
+Plan mode again: *"Redesign the start screen as more engaging landing page"*
 ---
 
 ### Task 3: Dogfood the Redesign
