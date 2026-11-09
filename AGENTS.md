@@ -29,6 +29,7 @@ Setup: `npm install`. Dev server: `npm run dev`. Tests use Vitest with jsdom and
 ## Conventions
 
 - Tailwind: [.github/instructions/tailwind-4.instructions.md](.github/instructions/tailwind-4.instructions.md)
+- Gradient Glass design: [.github/instructions/design-guide.instructions.md](.github/instructions/design-guide.instructions.md)
 - `src/` TypeScript and React: [.github/instructions/typescript-src.instructions.md](.github/instructions/typescript-src.instructions.md)
 - Workshop docs: [.github/instructions/workshop-docs.instructions.md](.github/instructions/workshop-docs.instructions.md)
 - Agents, prompts, and skills live under `.github/` (see [.github/agents/](.github/agents/)). Add new ones there.

@@ -1,39 +1,40 @@
 # Bingo Mixer
 
-Bingo Mixer is a social bingo game for in-person mixers. Find people who match the questions and get 5 in a row!
+**Find your people.** Bingo Mixer is a social bingo game for in-person mixers. Match people to questions, tap their squares, and get 5 in a row to win.
 
-📚 **[View Lab Guide](workshop/GUIDE.md)**
-🚀 **[Start with setup flow](workshop/01-setup.md)**
+🎮 **Run it locally in under a minute** with the quick start below, or follow the hands-on lab to build it yourself with GitHub Copilot.
 
----
-
-## 📚 Lab Guide
-
-| Part | Title |
-|------|-------|
-| [**00**](workshop/00-overview.md) | Overview & Checklist |
-| [**01**](workshop/01-setup.md) | Setup & Context Engineering |
-| [**02**](workshop/02-design.md) | Design-First Frontend |
-| [**03**](workshop/03-quiz-master.md) | Custom Quiz Master |
-| [**04**](workshop/04-multi-agent.md) | Multi-Agent Development |
-
-> 📝 Lab guides are also available in the [`workshop/`](workshop/) folder for offline reading.
+[🚀 Start the Lab](workshop/00-overview.md) · [📚 Lab Guide](workshop/GUIDE.md) · [⚡ Quick Start](#-quick-start)
 
 ---
 
-## Prerequisites
+## ✨ Why Bingo Mixer?
 
-- [Node.js 22](https://nodejs.org/) or higher
+| | |
+|---|---|
+| 🧊 **Break the ice** | Icebreaker questions turn strangers into conversations. |
+| 🎯 **Simple to play** | Find a match, tap the square, race for a line of five. |
+| 💾 **Remembers your game** | Progress is saved in the browser, so a refresh won't lose your board. |
+| 🧪 **Tested and typed** | Pure game logic is covered by unit tests and written in TypeScript. |
 
-## Dev Container / Codespaces
+## 🕹️ How to Play
 
-This repo already includes a `.devcontainer/devcontainer.json`.
+1. Press **Start Game** to get a fresh board of questions.
+2. Find people who match each question and tap their square.
+3. Get **5 in a row** (across, down, or diagonal) to win!
 
-- **GitHub Codespaces:** create a Codespace from **your own repository** and it will use the devcontainer automatically.
-- **VS Code Dev Containers:** clone locally, then run `Dev Containers: Reopen in Container`.
-- **GitHub Pages publishing:** deployment is configured for your own repository.
+## 🧱 Built With
 
-## Run
+- ⚛️ **React 19** and **TypeScript**
+- ⚡ **Vite 8** for fast dev and builds
+- 🎨 **Tailwind CSS 4** for styling
+- ✅ **Vitest** and **ESLint** for quality
+
+---
+
+## ⚡ Quick Start
+
+**Prerequisites:** [Node.js 22](https://nodejs.org/) or higher
 
 ```bash
 npm install

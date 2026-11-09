@@ -3,9 +3,29 @@
 @theme {
   --color-accent: #2563eb;
   --color-accent-light: #3b82f6;
-  --color-marked: #dcfce7;
-  --color-marked-border: #22c55e;
+  --color-marked: rgb(52 211 153 / 0.2);
+  --color-marked-border: rgb(110 231 183 / 0.6);
   --color-bingo: #fbbf24;
+
+  --animate-pop-in: pop-in 0.4s ease-out;
+
+  @keyframes pop-in {
+    from {
+      opacity: 0;
+      transform: translateY(8px) scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+}
+
+@utility glass {
+  background-color: rgb(255 255 255 / 0.08);
+  border: 1px solid rgb(255 255 255 / 0.18);
+  box-shadow: 0 8px 32px rgb(0 0 0 / 0.35), inset 0 1px 0 rgb(255 255 255 / 0.15);
+  backdrop-filter: blur(16px) saturate(140%);
 }
 
 html,
@@ -17,5 +37,13 @@ body,
 body {
   margin: 0;
   font-family: system-ui, -apple-system, sans-serif;
+  color: #e2e8f0;
+  background-color: #0f172a;
+  background-image:
+    radial-gradient(at 15% 20%, rgb(37 99 235 / 0.55) 0px, transparent 50%),
+    radial-gradient(at 85% 15%, rgb(14 165 233 / 0.4) 0px, transparent 45%),
+    radial-gradient(at 75% 90%, rgb(79 70 229 / 0.5) 0px, transparent 55%),
+    radial-gradient(at 10% 85%, rgb(59 130 246 / 0.35) 0px, transparent 45%);
+  background-attachment: fixed;
   -webkit-tap-highlight-color: transparent;
 }

@@ -74,6 +74,8 @@ Instructions guide all agentic codebase interactions, making them more efficient
 2. Open a new chat for the next task, as init can take a while and we can review later.
 3. Review results — is it not too long and overly detailed
    1. Optional follow-up: *"Compress down and add a mandatory development [ ] checklist (lint, build, test) to the top"*
+   *"Add linting rules for unused vars amd awaits usage; fix any errors"* 
+   *"Make the readme more engaging as landing page to the project"* 
 4. Apply and commit
 
 ✅ **Result:** All future requests will have a basic map of the workspace.

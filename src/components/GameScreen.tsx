@@ -17,38 +17,40 @@ export function GameScreen({
   onReset,
 }: GameScreenProps) {
   return (
-    <div className="flex flex-col min-h-full bg-gray-50">
+    <div className="flex flex-col min-h-full">
       {/* Header */}
-      <header className="flex items-center justify-between p-3 bg-white border-b border-gray-200">
+      <header className="glass flex items-center justify-between p-3 m-3 rounded-2xl">
         <button
           onClick={onReset}
-          className="text-gray-500 text-sm px-3 py-1.5 rounded active:bg-gray-100"
+          className="text-blue-100 text-sm px-3 py-1.5 rounded-lg hover:bg-white/10 active:bg-white/15 focus-visible:outline-2 focus-visible:outline-sky-300"
         >
           ← Back
         </button>
-        <h1 className="font-bold text-gray-900">Bingo Mixer</h1>
+        <h1 className="font-bold text-white tracking-tight">Bingo Mixer</h1>
         <div className="w-16"></div>
       </header>
 
       {/* Instructions */}
-      <p className="text-center text-gray-500 text-sm py-2 px-4">
+      <p className="text-center text-blue-100/80 text-sm py-2 px-4">
         Tap a square when you find someone who matches it.
       </p>
 
       {/* Bingo indicator */}
       {hasBingo && (
-        <div className="bg-amber-100 text-amber-800 text-center py-2 font-semibold text-sm">
+        <div className="mx-3 mb-2 rounded-xl border border-bingo/40 bg-bingo/20 text-amber-100 text-center py-2 font-semibold text-sm">
           🎉 BINGO! You got a line!
         </div>
       )}
 
       {/* Board */}
       <div className="flex-1 flex items-center justify-center p-3">
-        <BingoBoard
-          board={board}
-          winningSquareIds={winningSquareIds}
-          onSquareClick={onSquareClick}
-        />
+        <div className="glass w-full max-w-md rounded-3xl p-3">
+          <BingoBoard
+            board={board}
+            winningSquareIds={winningSquareIds}
+            onSquareClick={onSquareClick}
+          />
+        </div>
       </div>
     </div>
   );
